@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -14,23 +12,14 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the results and table.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Future improvements and tradeoffs
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Starting this project, I noticed the strict 3-hour time limit, which pushed me to think quickly and prioritize working fast. I styled the table as closely as possible to the original video, with a few adjustments. Given more time, I would have refined the styling further and added my own creative touches.
 
-## Learn More
+My past experience with tables that require sorting by ascending and descending allowed me to implement the sorting feature pretty quickly before adding some additional styling. For the scoring algorithm, I used AI to help me create an algorithm due to time constraints. With more time, I would have done my own research on and implemented a scoring algorithm that best fits the dataset.
 
-To learn more about Next.js, take a look at the following resources:
+When choosing tools, I opted for TailwindCSS because it allows me to write CSS quickly and efficiently. Aside from TailwindCSS and an icon package, the project was completed without relying on additional external libraries.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+In a real world environment, it is likely to not receive the entire data all at once. In which case, the API would have to implement a pagination and the client will have to handle caching, but in my case the dataset was rather small and I did the pagination manually on the server side before sending that data to the client.
