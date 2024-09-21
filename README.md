@@ -14,6 +14,8 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the results and table.
 
+Or view the project live here [https://data-table-lime.vercel.app](https://data-table-lime.vercel.app)
+
 ## Future improvements and tradeoffs
 
 Starting this project, I noticed the strict 3-hour time limit, which pushed me to think quickly and prioritize working fast. I styled the table as closely as possible to the original video, with a few adjustments. Given more time, I would have refined the styling further and added my own creative touches.
